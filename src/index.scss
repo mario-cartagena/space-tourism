@@ -1,0 +1,13 @@
+$typografyHeading: 'Bellefair', serif;
+$typografySubheading: 'Barlow Condensed', sans-serif;
+$colorPrimary: #FFFFFF;
+$colorSecondary: #D0D6F9;
+$colorTertiary: #0B0D17;
+$mediaQueryTablet: "768px";
+$mediaQueryMobile: "375px";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
