@@ -1,0 +1,15 @@
+.nav{
+    display: flex;
+    &__list{
+        position: absolute;
+        width: 830px;
+        height: 96px;
+        left: 610px;
+        top: 40px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+    }
+    &__items{
+        display: flex;
+    }
+}
