@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './styleCrew.scss';
 import { crewData } from '../../helpers/data';
-import { Navbar } from '../../components/navbar/Navbar';
 
 
 export const Crew = () => {
