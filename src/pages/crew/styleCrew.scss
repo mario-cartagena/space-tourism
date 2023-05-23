@@ -1,0 +1,30 @@
+.crew{
+    background: url("../../assets/img/desktop/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    &__information{
+        display: flex;
+    }
+}
+
+.dots-container{
+    position: absolute;
+  left: 10%;
+  bottom: 10%;
+  width: 20%;
+
+  display: flex;
+}
+
+.dots {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: 5%;
+    background-color: white;
+    opacity: 0.17;
+    cursor: pointer;
+  }
+  
+  .dots:hover {
+    opacity: 0.5;
+  }

@@ -1,0 +1,35 @@
+import spacemanDouglas from '../assets/img/desktop/crew/image-removebg-preview(289).png';
+import spacemanMark from '../assets/img/desktop/crew/image-removebg-preview(262).png';
+import spacemanVictor from '../assets/img/desktop/crew/image-removebg-preview(288).png';
+import spacemanAnousheh from '../assets/img/desktop/crew/image-removebg-preview(265).png';
+
+export const crewData = [
+    {
+        id: 1,
+        name: "Douglas Hurley",
+        image: spacemanDouglas,
+        role: "Commander",
+        bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+    },
+    {
+        id: 2,
+        name: "Mark Shuttleworth",
+        image: spacemanMark,
+        role: "Mission Specialist",
+        bio: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+    },
+    {
+        id: 3,
+        name: "Victor Glover",
+        image: spacemanVictor,
+        role: "Pilot",
+        bio: "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer."
+    },
+    {
+        id: 4,
+        name: "Anousheh Ansari",
+        image: spacemanAnousheh,
+        role: "Flight Engineer",
+        bio: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+    }
+];

@@ -5,6 +5,7 @@ import { Crew } from '../pages/crew/Crew';
 import { Destination } from '../pages/destination/Destination';
 import { Technology } from '../pages/technology/Technology';
 import { NotFound } from '../components/notFound/NotFound';
+import { Layout } from '../components/layout/Layout';
 
 const AppRouter = () => {
     return (
@@ -12,6 +13,7 @@ const AppRouter = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"} element={<Home/>}/>
+                    <Route path={"home"} element={<Home/>}/>
                     <Route path={"destination"} element={<Destination/>}/>
                     <Route path={"crew"} element={<Crew/>}/>
                     <Route path={"technology"} element={<Technology/>}/>
