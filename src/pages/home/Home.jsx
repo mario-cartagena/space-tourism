@@ -1,13 +1,9 @@
-import React from 'react';
-import './styleHome.scss'
-import { Navbar } from '../../components/navbar/Navbar'
-
+import React from "react";
+import "./Home.scss";
 export const Home = () => {
-  return (
-    <>
-      <div className='home'>
-        <Navbar/>
-      </div>
-    </>
-  )
+    return (
+        <div className="home">
+            <h1 className="home-tit">HOME</h1>
+        </div>
+    );
 }
