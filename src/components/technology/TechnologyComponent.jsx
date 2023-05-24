@@ -14,56 +14,52 @@ export const TechnologyComponent = () => {
   };
 
   return (
-    <>
-      <header className="header">
-        <div className="header__content">
-          <div className="header__slider">
-            <h1>
-              <span>0 3 </span>S P A C E &nbsp;&nbsp;&nbsp;L A U N C H
-              &nbsp;&nbsp;&nbsp;1 0 1
-            </h1>
-            <div>
-              {/* Botones para cambiar la imagen */}
-              {images.map((image, index) => (
-                <button
-                  className="header__button"
-                  key={index}
-                  onClick={() => toggleImage(index)}
-                  style={{
-                    backgroundColor:
-                      currentImage === index ? "#fff" : "transparent",
-                    color: currentImage === index ? "#000" : "#fff",
-                  }}
-                >
-                  {index + 1}
-                </button>
-              ))}
-            </div>
-          </div>
-          <div className="header__information">
-            <span>THE TERMINOLOGY…</span>
-
-            <h3>{titles[currentImage]}</h3>
-            <p>
-              A space capsule is an often-crewed spacecraft that uses a
-              blunt-body reentry capsule to reenter the Earth's atmosphere
-              without wings. Our capsule is where you'll spend your time during
-              the flight. It includes a space gym, cinema, and plenty of other
-              activities to keep you entertained.
-            </p>
-
-            
-          </div>
-
-          <div className="header__images">
-            {/* Mostrar solo la imagen actual */}
-            <img
-              src={images[currentImage]}
-              alt={`Technology ${currentImage + 1}`}
-            />
+    <header className="header">
+      <div className="header__content">
+        <div className="header__slider">
+          <h1>
+            <span>0 3 </span>S P A C E &nbsp;&nbsp;&nbsp;L A U N C H
+            &nbsp;&nbsp;&nbsp;1 0 1
+          </h1>
+          <div>
+            {/* Botones para cambiar la imagen */}
+            {images.map((image, index) => (
+              <button
+                className="header__button"
+                key={index}
+                onClick={() => toggleImage(index)}
+                style={{
+                  backgroundColor:
+                    currentImage === index ? "#fff" : "transparent",
+                  color: currentImage === index ? "#000" : "#fff",
+                }}
+              >
+                {index + 1}
+              </button>
+            ))}
           </div>
         </div>
-      </header>
-    </>
+        
+        <div className="header__information">
+          <span>THE TERMINOLOGY…</span>
+
+          <h3>{titles[currentImage]}</h3>
+          <p>
+            A space capsule is an often-crewed spacecraft that uses a
+            blunt-body reentry capsule to reenter the Earth's atmosphere without
+            wings. Our capsule is where you'll spend your time during the
+            flight. It includes a space gym, cinema, and plenty of other
+            activities to keep you entertained.
+          </p>
+        </div>
+        <div className="header__images">
+          {/* Mostrar solo la imagen actual */}
+          <img
+            src={images[currentImage]}
+            alt={`Technology ${currentImage + 1}`}
+          />
+        </div>
+        </div>
+    </header>
   );
 };

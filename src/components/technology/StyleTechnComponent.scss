@@ -10,14 +10,12 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 40px;
-    
+  }
 
-}
-    
   &__slider {
-      display: flex;
-      flex-direction: column;
-      
+    display: flex;
+    flex-direction: column;
+
     h1 {
       color: #fff;
       margin-bottom: 0px;
@@ -26,7 +24,10 @@
       position: absolute;
       top: 200px;
     }
+    span {
+      height: 34px;
     }
+  }
 
   &__button {
     display: flex;
@@ -43,7 +44,6 @@
     border-radius: 100%;
     cursor: pointer;
     transition: 0.5s ease;
-    
   }
 
   &__information {
@@ -56,31 +56,31 @@
       color: #fff;
       font-family: "Barlow Condensed", sans-serif;
       margin-bottom: 20px;
+      color:  #D0D6F9;
     }
 
     h3 {
       color: #fff;
-      font-family:'Bellefair', serif;
+      font-family: "Bellefair", serif;
       font-size: 50px;
       margin-bottom: 20px;
     }
 
-    p{
-      color: #fff;
+    p {
+      color:  #D0D6F9;
       font-family: "Barlow", sans-serif;
-    }
-    
-  &__images {
+      height: 192px;
+    }  
+    &__images {
     display: flex;
-    position: absolute;
     width: 515px;
     height: 527px;
     left: 997px;
     top: 272px;
-    
-  }
-    
   }
 
+
+  }
+  
 
 }
