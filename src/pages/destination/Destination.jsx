@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Destination.scss";
-import moon from "../../assets/moon.png";
-import mars from "../../assets/mars.png";
-import europa from "../../assets/europa.png";
-import titan from "../../assets/titan.png";
-function Destination() {
+import moon from "../../assets/img/destination/moon.png";
+import mars from "../../assets/img/destination/mars.png";
+import europa from "../../assets/img/destination/europa.png";
+import titan from "../../assets/img/destination/titan.png";
+
+export const Destination = () => {
     let moons = [
         {
             name: "MOON",
@@ -125,4 +126,3 @@ function Destination() {
     );
 }
 
-export default Destination;
