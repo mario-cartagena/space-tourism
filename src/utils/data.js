@@ -1,7 +1,7 @@
-import spacemanDouglas from '../assets/img/desktop/crew/image-removebg-preview(289).png';
-import spacemanMark from '../assets/img/desktop/crew/image-removebg-preview(262).png';
-import spacemanVictor from '../assets/img/desktop/crew/image-removebg-preview(288).png';
-import spacemanAnousheh from '../assets/img/desktop/crew/image-removebg-preview(265).png';
+import spacemanDouglas from '../assets/img/crew/spacemanDouglas.png';
+import spacemanMark from '../assets/img/crew/spacemanMark.png';
+import spacemanVictor from '../assets/img/crew/spacemanVictor.png';
+import spacemanAnousheh from '../assets/img/crew/spacemanAnousheh.png';
 
 export const crewData = [
     {

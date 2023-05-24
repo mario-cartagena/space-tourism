@@ -1,7 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import "./Technology.scss";
 export const Technology = () => {
-  return (
-    <div>Technology</div>
-  )
+    return (
+        <div className="technology">
+            <h1 className="tech-tit">TECHNOLOGY</h1>
+        </div>
+    );
 }

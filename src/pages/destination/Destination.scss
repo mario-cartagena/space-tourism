@@ -1,7 +1,7 @@
 .destination {
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/img/desktop/destination/Destination.png);
+    background-image: url(../../assets/img/destination/Destination.png);
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
@@ -34,7 +34,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items: flex-start;
             // padding-top: 8%;
             // padding-left: 4%;
             box-sizing: border-box;

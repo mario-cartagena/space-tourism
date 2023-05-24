@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./styleHeader.scss";
+import "./Header.scss";
 import { Link } from "react-router-dom";
 
-export const Header = () => {
+function Header() {
     const [navPage, setNavPage] = useState("home");
     function changePage(page) {
         setNavPage(page);
@@ -57,3 +57,5 @@ export const Header = () => {
         </div>
     );
 }
+
+export default Header;

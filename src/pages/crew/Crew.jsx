@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styleCrew.scss';
-import { crewData } from '../../helpers/data';
+import { crewData } from '../../utils/data';
 
 
 export const Crew = () => {
