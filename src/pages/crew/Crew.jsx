@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './styleCrew.scss';
 import { crewData } from '../../utils/data';
 
-
 export const Crew = () => {
   const [crew, setCrew] = useState(crewData[0]);
 
