@@ -6,61 +6,70 @@
     background-size: cover;
     position: relative;
     min-height: 900px !important;
-}
-
-.home__wrap {
-    width: 100%;
-    padding-inline: 11.5vw;
-    padding-bottom: 7vw;
-    position: absolute;
-    // bottom: 0;
-    top: 42vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.home__left {
-    max-width: 450px;
-    width: 100%;
-    animation: downIn 0.8s linear;
-
-    & h5 {
-        margin-bottom: 26px;
-    }
-
-    & h1 {
-        margin-bottom: 28px;
-        line-height: 1;
-    }
-
-    & p {
-        line-height: 2;
-        font-size: 18px;
-    }
-}
-
-.home__right {
-    width: 274px;
-    height: 274px;
-    line-height: 274px;
-    text-align: center;
-    background-color: $colorPrimary;
-    color: $colorTertiary;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    animation: upTo 0.8s linear;
-
-    & a {
-        display: block;
+    &__wrap{
         width: 100%;
-        height: 100%;
+        padding-inline: 11.5vw;
+        padding-bottom: 7vw;
+        position: absolute;
+        // bottom: 0;
+        top: 42vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
     }
+    &__left{
+        max-width: 450px;
+        width: 100%;
+        animation: downIn 0.8s linear;
 
-    &:hover .circle__below {
-        transform: scale(1.6);
-        opacity: 0.3;
+        & h5 {
+            margin-bottom: 26px;
+        }
+
+        & h1 {
+            margin-bottom: 28px;
+            line-height: 1;
+        }
+
+        & p {
+            line-height: 2;
+            font-size: 18px;
+        }
+    }
+    &__right{
+        width: 274px;
+        height: 274px;
+        line-height: 274px;
+        text-align: center;
+        background-color: $colorPrimary;
+        color: $colorTertiary;
+        border-radius: 50%;
+        position: relative;
+        z-index: 2;
+        animation: upTo 0.8s linear;
+
+        & a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover .circle__below {
+            transform: scale(1.6);
+            opacity: 0.3;
+        }
+    }
+    &__circle{
+        position: absolute;
+        width: 274px;
+        height: 274px;
+        background-color: $colorPrimary;
+        border-radius: 50%;
+        opacity: 0;
+        // transform: scale(1.6);
+        inset: 0;
+        z-index: -1;
+        transition: $t7;
     }
 }
 
@@ -78,16 +87,16 @@
 }
 
 @media screen and (max-width: 1023px) {
-    .home__wrap {
-        padding: 8vw;
-        padding-top: 0;
-    }
-
-    .home__right,
-    .circle__below {
-        width: 242px;
-        height: 242px;
-        line-height: 242px;
+    .home{
+        &__wrap{
+            padding: 8vw;
+            padding-top: 0;
+        }
+        &__right, .circle__below{
+            width: 242px;
+            height: 242px;
+            line-height: 242px;
+        }
     }
 }
 
@@ -106,42 +115,43 @@
 }
 
 @media screen and (max-width: $mediaQueryTablet) {
-    .home__wrap {
-        padding: unset;
-        padding-top: 6rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        top: unset;
-        position: relative;
-        min-height: 100vh;
-        height: 100%;
-    }
-
-    .home__right {
-        margin-top: 117px;
+    .home{
+        &__wrap{
+            padding: unset;
+            padding-top: 6rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            top: unset;
+            position: relative;
+            min-height: 100vh;
+            height: 100%;
+        }
+        &__right{
+            margin-top: 117px;
+        }
     }
 }
 
 @media screen and (max-width: $mediaQueryMobile) {
-    .home__wrap {
-        max-width: 88vw;
-        margin: 0 auto;
-    }
-
-    $lM: 150px;
-
-    .home__right,
-    .circle__below {
-        width: 150px;
-        height: 150px;
-        line-height: 150px;
+    .home{
+        &__wrap{
+            max-width: 88vw;
+            margin: 0 auto;
+        }
+        &__right, .circle__below{
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+        }
     }
 }
 
 @media screen and (max-width: 380px) {
-    .home__right {
-        margin-block: 60px;
+    .home{
+        &__right{
+            margin-block: 60px;
+        }
     }
 }
