@@ -8,12 +8,14 @@
     top: 0;
 
     .moons--container {
+        font-family: 'Bellefair';
         left: 10%;
         top: 30%;
         position: absolute;
         display: flex;
 
         .title {
+            font-family: 'Barlow Condensed';
             margin: 0;
             position: absolute;
             color: #fff;
@@ -31,12 +33,11 @@
         }
 
         .data {
+            font-family: 'Barlow';
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            // padding-top: 8%;
-            // padding-left: 4%;
             box-sizing: border-box;
             position: relative;
 
@@ -46,6 +47,7 @@
                 left: 54%;
 
                 ul {
+                    font-family: 'Barlow Condensed';
                     z-index: 10;
                     list-style: none;
                     display: flex;
@@ -55,6 +57,7 @@
                     height: 33px;
 
                     li {
+                        font-family: 'Barlow Condensed';
                         color: rgb(208, 214, 249);
                         transition: all .1s ease;
 
@@ -109,6 +112,7 @@
                     }
 
                     .desc {
+                        font-family: 'Barlow Condensed', sans-serif;
                         font-size: 18px;
                         width: 70%;
                         color: rgb(208, 214, 249);
@@ -117,6 +121,7 @@
                     }
 
                     .line {
+                        margin-bottom: 20px;
                         width: 75%;
                         height: 1.5px;
                         background-color: rgba(88, 91, 99, 0.7);
@@ -124,21 +129,35 @@
                     }
 
                     .dist-times {
+                        font-family: 'Bellefair';
                         display: flex;
                         column-gap: 100px;
                         color: rgb(208, 214, 249);
 
                         .distance {
                             h5 {
-                                font-size: 15px;
                                 margin-bottom: 10px;
+                                font-family: 'Barlow Condensed';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                letter-spacing: 2.3625px;
+                                text-transform: uppercase;
                             }
                         }
 
                         .time {
                             h5 {
-                                font-size: 15px;
-                                margin-bottom: 10px;
+                                margin-bottom: 10PX;
+                                font-family: 'Barlow Condensed';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                letter-spacing: 2.3625px;
+                                text-transform: uppercase;
+
                             }
                         }
 
