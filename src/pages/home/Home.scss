@@ -1,21 +1,11 @@
 @import '../../index.scss';
+
 .home {
     background-image: url("../../../src/assets/img/home/background-home-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
-
-@media screen and (max-width: 820px) {
-    .home {
-        background-image: url("../../../src/assets/img/home/background-home-tablet.jpg");
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .home {
-        background-image: url("../../../src/assets/img/home/background-home-mobile.jpg");
-    }
+    min-height: 900px !important;
 }
 
 .home__wrap {
@@ -24,7 +14,7 @@
     padding-bottom: 7vw;
     position: absolute;
     // bottom: 0;
-    top: 32vh;
+    top: 42vh;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -50,13 +40,10 @@
     }
 }
 
-$l: 274px;
-$al: 450px;
-
 .home__right {
-    width: $l;
-    height: $l;
-    line-height: $l;
+    width: 274px;
+    height: 274px;
+    line-height: 274px;
     text-align: center;
     background-color: $colorPrimary;
     color: $colorTertiary;
@@ -79,8 +66,8 @@ $al: 450px;
 
 .circle__below {
     position: absolute;
-    width: $l;
-    height: $l;
+    width: 274px;
+    height: 274px;
     background-color: $colorPrimary;
     border-radius: 50%;
     opacity: 0;
@@ -96,20 +83,32 @@ $al: 450px;
         padding-top: 0;
     }
 
-    $lT: 242px;
-
     .home__right,
     .circle__below {
-        width: $lT;
-        height: $lT;
-        line-height: $lT;
+        width: 242px;
+        height: 242px;
+        line-height: 242px;
     }
 }
 
-@media screen and (max-width: 820px) {
+// ********************** MEDIA QUERIES ********************
+
+@media screen and (max-width: $mediaQueryTablet) {
+    .home {
+        background-image: url("../../../src/assets/img/home/background-home-tablet.jpg");
+    }
+}
+
+@media screen and (max-width: $mediaQueryMobile) {
+    .home {
+        background-image: url("../../../src//assets/img/home/background-home-mobile.jpg");
+    }
+}
+
+@media screen and (max-width: $mediaQueryTablet) {
     .home__wrap {
         padding: unset;
-        padding-top: 96px;
+        padding-top: 6rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -121,11 +120,11 @@ $al: 450px;
     }
 
     .home__right {
-        margin-top: 90px;
+        margin-top: 117px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mediaQueryMobile) {
     .home__wrap {
         max-width: 88vw;
         margin: 0 auto;
@@ -135,9 +134,9 @@ $al: 450px;
 
     .home__right,
     .circle__below {
-        width: $lM;
-        height: $lM;
-        line-height: $lM;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
     }
 }
 

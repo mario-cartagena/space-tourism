@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Home.scss";
 export const Home = () => {
 
     return (
-        
         <section className="container home">
             <div className="home__wrap">
                 <div className="home__left">
@@ -17,13 +16,7 @@ export const Home = () => {
                     </p>
                 </div>
                 <h4 className="home__right">
-                    <a
-                        href="https://earth.google.com/web/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Explore
-                    </a>
+                    <a>Explore</a>
                     <div className="circle__below"></div>
                 </h4>
             </div>
