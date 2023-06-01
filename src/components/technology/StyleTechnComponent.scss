@@ -1,15 +1,15 @@
-.header {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: 50px;
-  
 
   &__content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 40px;
+    padding: 6px 0px 8px 70px;
+    top: 161px;
+    position: relative;
   }
 
   &__slider {
@@ -22,7 +22,7 @@
       font-family: "Barlow Condensed", sans-serif;
       font-weight: 400;
       position: absolute;
-      top: 200px;
+      top: -50px;
     }
     span {
       height: 34px;
@@ -49,38 +49,52 @@
   &__information {
     display: flex;
     flex-direction: column;
-    padding: 56px;
-    
+    padding: 82px;
 
     span {
-      color: #fff;
-      font-family: "Barlow Condensed", sans-serif;
       margin-bottom: 20px;
-      color:  #D0D6F9;
+      color: #d0d6f9;
+      font-family: "Barlow Condensed";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
     }
 
     h3 {
       color: #fff;
-      font-family: "Bellefair", serif;
-      font-size: 50px;
       margin-bottom: 20px;
+      font-family: "Bellefair";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 64px;
     }
 
     p {
-      color:  #D0D6F9;
+      color: #d0d6f9;
       font-family: "Barlow", sans-serif;
-      height: 192px;
-    }  
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 40px;
+      height: 80px;
+      word-wrap: break-word;
+      padding-right: 150px
+    }
+
     &__images {
-    display: flex;
-    width: 515px;
-    height: 527px;
-    left: 997px;
-    top: 272px;
+      display: flex;
+      width: 515px;
+      height: 527px;
+      left: 997px;
+      top: 272px;
+    }
   }
 
-
+  @media (min-width: 780px) {
+    /* Aquí puedes agregar los estilos que deseas aplicar para una resolución de 780px o superior */
   }
-  
-
 }
+
+

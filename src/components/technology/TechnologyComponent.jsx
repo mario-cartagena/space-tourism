@@ -3,6 +3,8 @@ import "./StyleTechnComponent.scss";
 import Image_0 from "../../assets/img/technology/Bitmap (2).png";
 import Image_1 from "../../assets/img/technology/Bitmap (3).png";
 import Image_2 from "../../assets/img/technology/Bitmap (4).png";
+import { technologyData } from "../../utils/data"
+
 
 export const TechnologyComponent = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -14,9 +16,9 @@ export const TechnologyComponent = () => {
   };
 
   return (
-    <header className="header">
-      <div className="header__content">
-        <div className="header__slider">
+    <header className="container">
+      <div className="container__content">
+        <div className="container__slider">
           <h1>
             <span>0 3 </span>S P A C E &nbsp;&nbsp;&nbsp;L A U N C H
             &nbsp;&nbsp;&nbsp;1 0 1
@@ -25,7 +27,7 @@ export const TechnologyComponent = () => {
             {/* Botones para cambiar la imagen */}
             {images.map((image, index) => (
               <button
-                className="header__button"
+                className="container__button"
                 key={index}
                 onClick={() => toggleImage(index)}
                 style={{
@@ -40,26 +42,20 @@ export const TechnologyComponent = () => {
           </div>
         </div>
         
-        <div className="header__information">
+        <div className="container__information">
           <span>THE TERMINOLOGY…</span>
 
           <h3>{titles[currentImage]}</h3>
-          <p>
-            A space capsule is an often-crewed spacecraft that uses a
-            blunt-body reentry capsule to reenter the Earth's atmosphere without
-            wings. Our capsule is where you'll spend your time during the
-            flight. It includes a space gym, cinema, and plenty of other
-            activities to keep you entertained.
-          </p>
+          <p>{technologyData[currentImage].info}</p>
         </div>
-        <div className="header__images">
+        <div className="container__images">
           {/* Mostrar solo la imagen actual */}
           <img
             src={images[currentImage]}
             alt={`Technology ${currentImage + 1}`}
           />
         </div>
-        </div>
+      </div>
     </header>
   );
 };
