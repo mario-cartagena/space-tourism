@@ -6,6 +6,7 @@ import Image_2 from "../../assets/img/technology/Bitmap (4).png";
 import { technologyData } from "../../utils/data"
 
 
+
 export const TechnologyComponent = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [Image_0, Image_1, Image_2];
@@ -16,8 +17,9 @@ export const TechnologyComponent = () => {
   };
 
   return (
-    
+    <>
       <div className="technology__content">
+        
         <div className="technology__slider">
           <h1>
             <span>0 3 </span>S P A C E &nbsp;&nbsp;&nbsp;L A U N C H
@@ -48,7 +50,7 @@ export const TechnologyComponent = () => {
           <h3>{titles[currentImage]}</h3>
           <p>{technologyData[currentImage].info}</p>
         </div>
-        <div className="technology__ima">
+        <div className="technology__image">
           {/* Mostrar solo la imagen actual */}
           <img
             src={images[currentImage]}
@@ -56,6 +58,6 @@ export const TechnologyComponent = () => {
           />
         </div>
       </div>
-   
+      </>
   );
 };
