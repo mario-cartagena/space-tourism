@@ -1,14 +1,12 @@
-.technology {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 50px;
+@import "../../index.scss";
 
+.technology {
+  
   &__content {
     display: flex;
     justify-content: space-between;
     padding: 6px 0px 8px 70px;
-    top: 161px;
+    top: 300px;
     position: relative;
   }
 
@@ -19,7 +17,8 @@
     h1 {
       color: #fff;
       margin-bottom: 0px;
-      font-family: "Barlow Condensed", sans-serif;
+      font-family: $typografySubheading;
+      font-size: 28px;
       font-weight: 400;
       position: absolute;
       top: -50px;
@@ -37,7 +36,7 @@
     display: block;
     width: 90px;
     height: 90px;
-    font-family: "Bellefair", serif;
+    font-family: $typografyHeading;
     color: #fff;
     font-size: 30px;
     border: 1px solid gray;
@@ -54,7 +53,7 @@
     span {
       margin-bottom: 20px;
       color: #d0d6f9;
-      font-family: "Barlow Condensed";
+      font-family: $typografySubheading;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -65,7 +64,7 @@
     h3 {
       color: #fff;
       margin-bottom: 20px;
-      font-family: "Bellefair";
+      font-family: $typografyHeading;
       font-style: normal;
       font-weight: 400;
       font-size: 56px;
@@ -74,7 +73,7 @@
 
     p {
       color: #d0d6f9;
-      font-family: "Barlow", sans-serif;
+      font-family: $typografyHeading;
       font-weight: 400;
       font-size: 18px;
       line-height: 40px;
@@ -83,14 +82,17 @@
       padding-right: 150px
     }
 
-    &__images {
-      display: flex;
-      width: 515px;
-      height: 527px;
-      left: 997px;
-      top: 272px;
-    }
+  
   }
+  &__ima {
+    display: flex;
+    width: 515px;
+    height: 527px;
+    left: 997px;
+    top: 272px;
+  }
+
+
 
   @media (min-width: 780px) {
     /* Aquí puedes agregar los estilos que deseas aplicar para una resolución de 780px o superior */

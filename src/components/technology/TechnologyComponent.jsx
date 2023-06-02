@@ -16,7 +16,6 @@ export const TechnologyComponent = () => {
   };
 
   return (
-    <header className="technology">
       <div className="technology__content">
         <div className="technology__slider">
           <h1>
@@ -48,6 +47,7 @@ export const TechnologyComponent = () => {
           <h3>{titles[currentImage]}</h3>
           <p>{technologyData[currentImage].info}</p>
         </div>
+
         <div className="technology__images">
           {/* Mostrar solo la imagen actual */}
           <img
@@ -56,6 +56,6 @@ export const TechnologyComponent = () => {
           />
         </div>
       </div>
-    </header>
+   
   );
 };
