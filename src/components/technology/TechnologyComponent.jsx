@@ -16,7 +16,6 @@ export const TechnologyComponent = () => {
   };
 
   return (
-    
       <div className="technology__content">
         <div className="technology__slider">
           <h1>
@@ -48,7 +47,8 @@ export const TechnologyComponent = () => {
           <h3>{titles[currentImage]}</h3>
           <p>{technologyData[currentImage].info}</p>
         </div>
-        <div className="technology__ima">
+
+        <div className="technology__images">
           {/* Mostrar solo la imagen actual */}
           <img
             src={images[currentImage]}
