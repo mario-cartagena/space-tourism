@@ -17,9 +17,8 @@ export const TechnologyComponent = () => {
   };
 
   return (
-    <>
-      <div className="technology__content">
-        
+    <div className="technology">
+      <div className="technology__content">  
         <div className="technology__slider">
           <h1>
             <span>0 3 </span>S P A C E &nbsp;&nbsp;&nbsp;L A U N C H
@@ -58,6 +57,6 @@ export const TechnologyComponent = () => {
           />
         </div>
       </div>
-      </>
+    </div>
   );
 };
