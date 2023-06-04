@@ -8,14 +8,12 @@
     top: 0;
 
     .moons--container {
-        font-family: 'Bellefair';
         left: 10%;
         top: 30%;
         position: absolute;
         display: flex;
 
         .title {
-            font-family: 'Barlow Condensed';
             margin: 0;
             position: absolute;
             color: #fff;
@@ -33,11 +31,12 @@
         }
 
         .data {
-            font-family: 'Barlow';
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: start;
+            // padding-top: 8%;
+            // padding-left: 4%;
             box-sizing: border-box;
             position: relative;
 
@@ -47,7 +46,6 @@
                 left: 54%;
 
                 ul {
-                    font-family: 'Barlow Condensed';
                     z-index: 10;
                     list-style: none;
                     display: flex;
@@ -57,7 +55,6 @@
                     height: 33px;
 
                     li {
-                        font-family: 'Barlow Condensed';
                         color: rgb(208, 214, 249);
                         transition: all .1s ease;
 
@@ -112,16 +109,14 @@
                     }
 
                     .desc {
-                        font-family: 'Barlow Condensed', sans-serif;
                         font-size: 18px;
                         width: 70%;
                         color: rgb(208, 214, 249);
                         margin-bottom: 85px;
-                        line-height: 27px;
+                        line-height: 35px;
                     }
 
                     .line {
-                        margin-bottom: 20px;
                         width: 75%;
                         height: 1.5px;
                         background-color: rgba(88, 91, 99, 0.7);
@@ -129,35 +124,21 @@
                     }
 
                     .dist-times {
-                        font-family: 'Bellefair';
                         display: flex;
                         column-gap: 100px;
                         color: rgb(208, 214, 249);
 
                         .distance {
                             h5 {
+                                font-size: 15px;
                                 margin-bottom: 10px;
-                                font-family: 'Barlow Condensed';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 14px;
-                                line-height: 17px;
-                                letter-spacing: 2.3625px;
-                                text-transform: uppercase;
                             }
                         }
 
                         .time {
                             h5 {
-                                margin-bottom: 10PX;
-                                font-family: 'Barlow Condensed';
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 14px;
-                                line-height: 17px;
-                                letter-spacing: 2.3625px;
-                                text-transform: uppercase;
-
+                                font-size: 15px;
+                                margin-bottom: 10px;
                             }
                         }
 
@@ -169,6 +150,151 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+@media (max-width: 1288px) {
+    .destination {
+        .moons--container {
+            top: 20%;
+            left: 0;
+
+            .title {
+                margin-left: 5%;
+            }
+
+            .data {
+                top: 60px;
+
+                .moons {
+                    top: 58%;
+                    left: auto;
+                    margin-bottom: 0;
+
+                    ul {
+                        width: 100%;
+                    }
+                }
+
+                .moons-desc {
+                    flex-direction: column;
+                    height: 50%;
+                    align-items: center;
+
+                    .moons-img {
+                        width: auto;
+                        height: 545px;
+
+                        img {
+                            top: 5%;
+                            left: 0;
+                            height: 100%;
+                        }
+                    }
+
+                    .moons-data {
+                        top: 20%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding-bottom: 50px;
+                        width: 90%;
+                        left: auto;
+
+                        .name {
+                            text-align: center;
+                        }
+
+                        .desc {
+                            text-align: center;
+                            margin-bottom: 66px;
+                        }
+
+                        .line {
+                            text-align: center;
+                            margin-bottom: 32px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .destination {
+        width: 100%;
+
+        .moons--container {
+            width: 100%;
+
+            .title {
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+                margin: 0;
+
+                .title-number {
+                    margin: 0;
+                }
+            }
+
+            .data {
+                width: 100%;
+
+                .moons {
+                    top: 35%;
+
+                    ul {
+                        column-gap: 40px;
+                    }
+                }
+
+                .moons-desc {
+                    width: 100%;
+
+                    .moons-img {
+                        width: 80%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .moons-data {
+                        top: 15%;
+                        padding: 0;
+
+                        .dist-times {
+                            flex-direction: column;
+
+                            h5 {
+                                text-align: center;
+                            }
+
+                            p {
+                                text-align: center;
+                            }
+                        }
+
+                        .name {
+                            font-size: 80px;
+                        }
+
+                        .desc {
+                            margin-bottom: 15px;
+                            width: 100%;
+                        }
+
+                        .line {
+                            width: 100%;
+                        }
+                    }
+
+                }
             }
         }
     }

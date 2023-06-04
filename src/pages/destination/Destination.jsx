@@ -45,6 +45,9 @@ export const Destination = () => {
             moons.find((moon) => moon.name === name)
         );
     }
+    // const elementoEncontrado = moons.find(
+    //     (moon) => moon.name === changeMoon
+    // );
 
     useEffect(() => {
         changeMoon && console.log(changeMoon);
@@ -58,47 +61,55 @@ export const Destination = () => {
                     DESTINATION
                 </h3>
                 <div className="data">
-                    <div className="moons">
-                        <ul className="moon-names">
-                            <li
-                                onClick={() => selectMoon("MOON")}
-                                className={`my-element ${
-                                    changeMoon.name === "MOON" ? "active" : ""
-                                }`}
-                            >
-                                MOON
-                            </li>
-                            <li
-                                onClick={() => selectMoon("MARS")}
-                                className={`my-element ${
-                                    changeMoon.name === "MARS" ? "active" : ""
-                                }`}
-                            >
-                                MARS
-                            </li>
-                            <li
-                                onClick={() => selectMoon("EUROPA")}
-                                className={`my-element ${
-                                    changeMoon.name === "EUROPA" ? "active" : ""
-                                }`}
-                            >
-                                EUROPA
-                            </li>
-                            <li
-                                onClick={() => selectMoon("TITAN")}
-                                className={`my-element ${
-                                    changeMoon.name === "TITAN" ? "active" : ""
-                                }`}
-                            >
-                                TITAN
-                            </li>
-                        </ul>
-                    </div>
                     <div className="moons-desc">
                         {changeMoon && (
                             <>
                                 <div className="moons-img">
                                     <img src={changeMoon.image} alt="" />
+                                </div>
+                                <div className="moons">
+                                    <ul className="moon-names">
+                                        <li
+                                            onClick={() => selectMoon("MOON")}
+                                            className={`my-element ${
+                                                changeMoon.name === "MOON"
+                                                    ? "active"
+                                                    : ""
+                                            }`}
+                                        >
+                                            MOON
+                                        </li>
+                                        <li
+                                            onClick={() => selectMoon("MARS")}
+                                            className={`my-element ${
+                                                changeMoon.name === "MARS"
+                                                    ? "active"
+                                                    : ""
+                                            }`}
+                                        >
+                                            MARS
+                                        </li>
+                                        <li
+                                            onClick={() => selectMoon("EUROPA")}
+                                            className={`my-element ${
+                                                changeMoon.name === "EUROPA"
+                                                    ? "active"
+                                                    : ""
+                                            }`}
+                                        >
+                                            EUROPA
+                                        </li>
+                                        <li
+                                            onClick={() => selectMoon("TITAN")}
+                                            className={`my-element ${
+                                                changeMoon.name === "TITAN"
+                                                    ? "active"
+                                                    : ""
+                                            }`}
+                                        >
+                                            TITAN
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className="moons-data">
                                     <h5 className="name">{changeMoon.name}</h5>
