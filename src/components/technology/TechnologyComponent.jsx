@@ -57,12 +57,7 @@ export const TechnologyComponent = () => {
           <p>{technologyData[currentImage].info}</p>
         </div>
 
-<<<<<<< HEAD
-        <div className="technology__images">
-          {/* Mostrar solo la imagen actual */}
-=======
         <div className="technology__image">
->>>>>>> feature-technology
           <img
             src={
               isMobile
