@@ -4,7 +4,7 @@ import { technologyData } from "../../utils/data";
 
 export const TechnologyComponent = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const [isResponsive, setIsResponsive] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   
   const titles = technologyData.map((item) => item.title);
 
@@ -14,17 +14,17 @@ export const TechnologyComponent = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsResponsive(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 375);
     };
 
-    handleResize(); // Llamamos a handleResize para establecer el estado inicial al montar el componente
+    handleResize();
 
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []); // Agregamos window.innerWidth como dependencia
+  }, []);
 
   return (
     <div className="technology">
@@ -59,7 +59,13 @@ export const TechnologyComponent = () => {
 
         <div className="technology__image">
           <img
-            src={isResponsive ? technologyData[currentImage].imageResponsive : technologyData[currentImage].image}
+            src={
+              isMobile
+                ? technologyData[currentImage].imageMobile
+                : window.innerWidth <= 768
+                ? technologyData[currentImage].imageResponsive
+                : technologyData[currentImage].image
+            }
             alt={`Technology ${currentImage + 1}`}
           />
         </div>
