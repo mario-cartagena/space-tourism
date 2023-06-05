@@ -5,7 +5,7 @@ import "./StyleTechnology.scss"
 
 export const Technology = () => {
   return (
-    <div className='techno'>
+    <div>
       <TechnologyComponent/>
     </div>
   )

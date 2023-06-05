@@ -76,7 +76,6 @@ export const TechnologyComponent = () => {
 
 
 
-
 // import React, { useState } from "react";
 // import "./StyleTechnComponent.scss";
 // import { technologyData } from "../../utils/data";
