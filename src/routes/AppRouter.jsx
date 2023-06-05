@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Home } from '../pages/home/Home';
 import { Crew } from '../pages/crew/Crew';
 import { Destination }  from '../pages/destination/Destination';
-import { Technology } from '../pages/technology/Technology';
 import  { NotFound }  from '../components/notFound/NotFound';
 import { Layout } from '../components/layout/Layout';
+import { TechnologyComponent } from '../components/technology/TechnologyComponent';
 
 const AppRouter = () => {
     return (
@@ -14,10 +14,10 @@ const AppRouter = () => {
                 <Routes>
                     <Route element={<Layout/>}>
                         <Route index element={<Home/>}/>
-                        <Route path={"home"} element={<Home/>}/>
+                        <Route path={"home"} element={<Navigate to="/"/>}/>
                         <Route path={"destination"} element={<Destination/>}/>
                         <Route path={"crew"} element={<Crew/>}/>
-                        <Route path={"technology"} element={<Technology/>}/>
+                        <Route path={"technology"} element={<TechnologyComponent/>}/>
                     </Route>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>

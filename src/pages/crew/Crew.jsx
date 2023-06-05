@@ -2,56 +2,55 @@ import React, { useState } from 'react';
 import './styleCrew.scss';
 import { crewData } from '../../utils/data';
 
-
 export const Crew = () => {
-  const [crew, setCrew] = useState(crewData[0]);
+    const [crewActive, setCrewActive] = useState(0);
 
-  const handleClick = (item) => {
-    setCrew({
-      name: item.name,
-      image: item.image,
-      role: item.role,
-      bio: item.bio,
-      id: item.id,
-    });
-  };
-
-  return (
-    <section className='crew'>
-        <div className="crew-page-title">
-          <span>0{crew.id}</span>
-          <p>Meet your crew</p>
-        </div>    
-
-        <div className="crew__information">
-          <div className='crew__left'>
-            <div className="crew__rol">
-              <span>{crew.role}</span>
-              <h1>{crew.name}</h1>
+    return (
+        <section className="container crew">
+          <div className="crew__wrap">
+            <div className="crew__title">
+                <h5>
+                    <span>02</span> Meet your crew
+                </h5>
             </div>
-            <div className="crew__bio">
-              <span>{crew.bio}</span>
-            </div>
-          </div>
-          <div className='crew__right'>
-            <figure>
-              <img src={crew.image} alt={crew.name} />
-            </figure>
-          </div>
-        </div>
 
-        <div className="dots-container">
-          {crewData.map((item) => {
-            return (
-              <div
-                key={item.id}
-                className="dots"
-                id={`crew-${item.id}`}
-                onClick={() => handleClick(item)}
-              ></div>
-            );
-          })}
-        </div>
-    </section>
-  )
+            {crewData.map((item, index) => (
+                <div
+                    className={
+                        crewActive === index
+                            ? "crew__item active"
+                            : "crew__item"
+                    }
+                    key={index}
+                >
+                    <div className="crew__left">
+                        <div className="crew__content">
+                            <h4>{item.role}</h4>
+                            <h3>{item.name}</h3>
+                            <p>{item.bio}</p>
+                        </div>
+                        <div className="crew__bullets">
+                            {crewData.map((item, bulletIndex) => (
+                                <div
+                                    className={
+                                        crewActive === bulletIndex
+                                            ? "crew__bullet active"
+                                            : "crew__bullet"
+                                    }
+                                    key={item.id}
+                                    onClick={() => setCrewActive(bulletIndex)}
+                                ></div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="crew__right">
+                        <div className="crew__img">
+                            <img src={item.image} alt="crew" />
+                        </div>
+                    </div>
+                </div>
+            ))}
+            </div>
+        </section>
+    )
 }
