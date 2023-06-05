@@ -97,14 +97,13 @@
     display: flex;
     width: 100%;
     height: 495px;
-    // left: 997px;
-    // top: 272px;
+   
   }
 }
 
 @media screen and (max-width: $mediaQueryTablet) {
   .technology {
-    background-image: url("../../assets/img/technology/background-technology-mobile.jpg");
+    background-image: url("../../assets/img/technology/background-technology-tablet.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -118,7 +117,7 @@
     }
     &__information {
       position: relative;
-      top: 85%;
+      top: 45%;
       padding: 116px;
       left: -136px;
       align-items: center;
@@ -137,7 +136,7 @@
       div {
         display: flex;
         position: absolute;
-        top: 963%;
+        top: 890%;
         left: 49%;
         gap: 18px;
         z-index: 2;
@@ -146,10 +145,11 @@
 
     &__image {
       position: relative;
-      bottom: 100%;
+      bottom: 70%;
       right: 16%;
       width: 768px;
       display: flex;
+      height: 310px;
     }
   }
 }
@@ -158,7 +158,7 @@
 //...................................................................
 @media screen and (max-width: $mediaQueryMobile) {
   .technology {
-    background-image: url("../../assets/img/technology/background-technology-tablet.jpg");
+    background-image: url("../../assets/img/technology/background-technology-mobile.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -172,7 +172,7 @@
     }
     &__information {
       position: relative;
-      top: 23%;
+      top: 10%;
       padding: 116px;
       left: -183px;
       align-items: center;
@@ -194,13 +194,13 @@
       h1 {
         position: relative;
         margin-left: -45px;
-        top: -144px;
+        top: -164px;
         font-size: 20px;
       }
       div {
         display: flex;
         position: absolute;
-        top: 241%;
+        top: 100%;
         left: -21%;
         gap: 18px;
         z-index: 2;
@@ -219,21 +219,12 @@
     }
 
     &__image {
-      // background-image: url("../../assets/img/technology/BitmapRes01.png");
-      // background-size: 100%;
-      // background-repeat: no-repeat;
       position: relative;
-      bottom: 110%;
-      right: 16%;
-      width: 768px;
+      bottom: 91%;
+      right: 24%;
+      width: 375px;
       display: flex;
-      // width: 768px;
-      // height: 310px;
-
-      // img{
-      //   display: none;
-      //   width: 50%;
-      // }
+      height: 170px;
     }
   }
 }
